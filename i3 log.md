@@ -1,5 +1,3 @@
-polybar上面的应用图标原来是由一个叫 tray 的东西显示的。
-
 > 修改改变窗口的 dpi: 
 
 
@@ -14,3 +12,8 @@ polybar上面的应用图标原来是由一个叫 tray 的东西显示的。
 sudo pacman -S polybar
 ```
 2. 配置 Polybar 初始启动, 根据[ polybar 官方指南](https://github.com/polybar/polybar/wiki)
+
+3. tray相关配置:
+- tray-position = right/..
+
+4. fontawesome 字体?
