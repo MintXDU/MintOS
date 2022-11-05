@@ -33,6 +33,16 @@ exec_always --no-startup-id feh --bg-scale PathToPicture
 
 - 如果你发现 locale 之后出现异常，比如所有变量值都为 posix <br>
 
+这可能是你用户使用的 sh 的问题(如 zsh)，它可能没有 resource /etc/profile.d/locale/sh . 导致 locale 均为默认值 posix. <br>
+有两种方法：
+1. 从根本上解决问题: 
+
+$\qquad$ 如果你使用的是 bash 的话，可能没有出现这种问题，因为 bash 会加载 /etc/profile 来获取环境变量，但是 zsh 是使用 /etc/zsh/，按顺序加载其下面的 zshenv, zprofile, zshrc, zlogin 文件.\
+$\qquad$ 如果在 /etc/zsh/zprofile 下面相应的环境变量就可以获取正确的环境变量。\
+$\qquad$ 对本问题来说，即在 /etc/zsh/zprofile 中加入 source /etc/profile
+
+2. 借助 ssdm:
+
 $\qquad$ 可以在文件 ~/.xprofile 中添加语句
 ```
 resource /etc/profile.d/locale.sh
