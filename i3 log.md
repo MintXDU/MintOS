@@ -48,3 +48,7 @@ $\qquad$ 可以在文件 ~/.xprofile 中添加语句
 resource /etc/profile.d/locale.sh
 ```
 $\qquad$ SSDM 在启动时会先执行 ~/.profile 等文件
+
+> 文件管理器出现无权限挂载等问题
+
+查看[ archwiki 相关文档](https://wiki.archlinux.org/title/PCManFM_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E6%8C%82%E8%BD%BD%E8%AE%BE%E5%A4%87%E6%97%B6%E5%80%99%E6%8F%90%E9%86%92_%22Not_authorized%22)
