@@ -28,7 +28,13 @@ sudo pacman -S feh
 exec_always --no-startup-id feh --bg-scale PathToPicture
 ```
 更多 feh 操作 请查看[ feh archwiki](https://wiki.archlinux.org/title/Feh_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
+> 控制音量麦克风输入输出设备
 
+安装 pacmixer
+```
+yay -S pacmixer
+```
+通过可视化命令行来控制
 > 一些错误
 
 - 如果你发现 locale 之后出现异常，比如所有变量值都为 posix <br>
