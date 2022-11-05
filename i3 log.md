@@ -17,3 +17,14 @@ sudo pacman -S polybar
 - tray-position = right/..
 
 4. fontawesome 字体?
+
+5. 设置壁纸
+安装 feh
+```
+sudo pacman -S feh
+```
+在 i3 配置文件中加入
+```
+exec_always --no-startup-id feh --bg-scale PathToPicture
+```
+更多 feh 操作 请查看[ feh archwiki](https://wiki.archlinux.org/title/Feh_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
