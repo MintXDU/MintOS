@@ -18,7 +18,7 @@ sudo pacman -S polybar
 
 4. fontawesome 字体?
 
-5. 设置壁纸
+> 设置壁纸
 安装 feh
 ```
 sudo pacman -S feh
@@ -30,11 +30,17 @@ exec_always --no-startup-id feh --bg-scale PathToPicture
 更多 feh 操作 请查看[ feh archwiki](https://wiki.archlinux.org/title/Feh_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
 > 控制音量麦克风输入输出设备
 
-安装 pacmixer
+1. 安装 pacmixer
 ```
 yay -S pacmixer
 ```
-通过可视化命令行来控制
+$\qquad$通过可视化命令行来控制
+2. 安装 pa-applet-git
+```
+yay -S pa-applet-git
+```
+命令行输入```pa-applet```在托盘中启动可视化管理音频工具。
+
 > 一些错误
 
 - 如果你发现 locale 之后出现异常，比如所有变量值都为 posix <br>
