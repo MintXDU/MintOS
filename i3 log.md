@@ -4,7 +4,9 @@
   1.  修改 ~/.Xresources 文件中的 Xft.dpi
       eg: Xft.dpi: 120
   2.  执行命令: xrdb ~/.Xresources
-> Polybar:
+<br>
+
+> Polybar
 
 
 1. 安装 Polybar
@@ -18,6 +20,8 @@ sudo pacman -S polybar
 
 4. fontawesome 字体?
 
+<br>
+
 > 设置壁纸
 安装 feh
 ```
@@ -28,6 +32,9 @@ sudo pacman -S feh
 exec_always --no-startup-id feh --bg-scale PathToPicture
 ```
 更多 feh 操作 请查看[ feh archwiki](https://wiki.archlinux.org/title/Feh_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
+
+<br>
+
 > 控制音量麦克风输入输出设备
 
 1. 安装 pacmixer
@@ -35,11 +42,34 @@ exec_always --no-startup-id feh --bg-scale PathToPicture
 yay -S pacmixer
 ```
 $\qquad$通过可视化命令行来控制
+
 2. 安装 pa-applet-git
 ```
 yay -S pa-applet-git
 ```
 命令行输入```pa-applet```在托盘中启动可视化管理音频工具。
+
+<br>
+
+> rofi 相关
+
+1. 安装rofi
+```
+sudo pacman -S rofi
+```
+
+2. 通过 rofi 使用剪切板
+    - ```yay -S rofi-greenclip```
+    - 根据官方文档，更新```~/.config/greenclip.toml```文件
+    - 在 i3 中添加快捷键```bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'```
+3. 通过 rofi 配置网络
+    - ```yay -S networkmanager-dmenu-git```
+    - 在 i3 中添加快捷键```bindsym $mod+n exec --no-startup-id networkmanager_dmenu```
+4. 通过 rofi 配置蓝牙
+    - ```yay -S rofi-bluetooth```
+    - 在 i3 中添加快捷键```bindsym $mod+b exec --no-startup-id rofi-bluetooth```
+
+<br>
 
 > 一些错误
 
