@@ -1,3 +1,4 @@
+## 通用工具
 ### 1. 通过命令行进行网络连接管理:
 下载包 networkmanager
 ```
@@ -20,3 +21,8 @@ convert name.jpg name.png
 sudo pacman -S chezmoi
 ```
 具体操作，查看[官方文档](https://www.chezmoi.io/quick-start/)。
+
+### 5. 安装 github-cli , github 命令行工具
+```
+sudo pacman -S github-cli
+```
