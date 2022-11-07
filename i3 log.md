@@ -1,4 +1,4 @@
-> 修改改变窗口的 dpi: 
+### 修改改变窗口的 dpi: 
 
 
   1.  修改 ~/.Xresources 文件中的 Xft.dpi
@@ -6,7 +6,7 @@
   2.  执行命令: xrdb ~/.Xresources
 <br>
 
-> Polybar
+### Polybar
 
 
 1. 安装 Polybar
@@ -22,7 +22,7 @@ sudo pacman -S polybar
 
 <br>
 
-> 设置壁纸
+### 设置壁纸
 安装 feh
 ```
 sudo pacman -S feh
@@ -35,7 +35,7 @@ exec_always --no-startup-id feh --bg-scale PathToPicture
 
 <br>
 
-> 控制音量麦克风输入输出设备
+### 控制音量麦克风输入输出设备
 
 1. 安装 pacmixer
 ```
@@ -51,7 +51,7 @@ yay -S pa-applet-git
 
 <br>
 
-> rofi 相关
+### rofi 相关
 
 1. 安装rofi
 ```
@@ -71,9 +71,9 @@ sudo pacman -S rofi
 
 <br>
 
-> 一些错误
+## 一些错误
 
-- 如果你发现 locale 之后出现异常，比如所有变量值都为 posix <br>
+### 如果你发现 locale 之后出现异常，比如所有变量值都为 posix <br>
 
 这可能是你用户使用的 sh 的问题(如 zsh)，它可能没有 resource /etc/profile.d/locale/sh . 导致 locale 均为默认值 posix. <br>
 有两种方法：
@@ -91,6 +91,10 @@ resource /etc/profile.d/locale.sh
 ```
 $\qquad$ SSDM 在启动时会先执行 ~/.profile 等文件
 
-> 文件管理器出现无权限挂载等问题
+### 文件管理器出现无权限挂载等问题
 
 查看[ archwiki 相关文档](https://wiki.archlinux.org/title/PCManFM_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#%E6%8C%82%E8%BD%BD%E8%AE%BE%E5%A4%87%E6%97%B6%E5%80%99%E6%8F%90%E9%86%92_%22Not_authorized%22)
+
+### flameshot 每次使用都会卡顿一段时间
+这是因为每次使用 falmeshot，它都会给出一个通知窗口，如果你的系统没有通知系统，flameshot 就无法寻找到如何通知你，所以卡顿。
+安装 dunst 可以解决你的问题。
