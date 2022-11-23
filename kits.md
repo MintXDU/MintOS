@@ -26,3 +26,15 @@ sudo pacman -S chezmoi
 ```
 sudo pacman -S github-cli
 ```
+
+### 6. 配置 tex 编辑环境
+```
+sudo pamcan -S texlive-most # 安装很多关于 tex live 的包
+sudo pamcan -S texlive-core # 安装核心
+sudo pamcan -S texlive-langchinese # 安装中文支持
+```
+参考文档：
+
+[在 archlinux 上搭建 latex 环境并使用 vscode 编写](https://huangno1.github.io/arhlinux_vscode_latex_install_configuration/)
+
+[Tex Live(简体中文) archwiki](https://wiki.archlinux.org/title/TeX_Live_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
