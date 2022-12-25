@@ -1,3 +1,7 @@
+### 双系统挂载 windows 盘
+  推荐博客：[Linux下通过修改fstab来自动挂载Windows 分区](https://cloud.tencent.com/developer/article/1559411)
+
+
 ### 修改改变窗口的 dpi: 
 
 
@@ -70,6 +74,8 @@ sudo pacman -S rofi
     - 在 i3 中添加快捷键```bindsym $mod+b exec --no-startup-id rofi-bluetooth```
 
 <br>
+
+
 
 ## 一些错误
 
