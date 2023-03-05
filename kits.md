@@ -39,7 +39,7 @@ sudo pamcan -S texlive-langchinese # 安装中文支持
 
 [Tex Live(简体中文) archwiki](https://wiki.archlinux.org/title/TeX_Live_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
 
-### 7. 安装 nvidia 独显驱动(已有intel核显)
+### 7. 安装 nvidia 独显驱动(已有intel核显)(安装前一定要保存快照！！！)
 ```
 sudo pacman -S nvidia nvidia-settings lib32-nvidia-utils
 ```
