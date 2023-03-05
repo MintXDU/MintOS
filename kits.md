@@ -38,3 +38,22 @@ sudo pamcan -S texlive-langchinese # 安装中文支持
 [在 archlinux 上搭建 latex 环境并使用 vscode 编写](https://huangno1.github.io/arhlinux_vscode_latex_install_configuration/)
 
 [Tex Live(简体中文) archwiki](https://wiki.archlinux.org/title/TeX_Live_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
+
+### 7. 安装 nvidia 独显驱动(已有intel核显)
+```
+sudo pacman -S nvidia nvidia-settings lib32-nvidia-utils
+```
+参考文档：
+[NVIDIA - archwiki](https://wiki.archlinuxcn.org/wiki/NVIDIA)
+[安装N卡驱动](https://wynio.online/posts/37c1/)
+[GRUB 如何设置 Linux 内核参数](https://razonyang.com/zh-hans/blog/linux/grub/kernel-parameters/)
+主要参考 wiki
+其中：
+1. **在引导加载程序中设置内核参数 ibt=off**是必须的。具体操作为：将内核参数追加到 /etc/default/grub 文件中的 GRUB_CMDLINE_LINUX_DEFAULT，每个参数以空格隔开。
+```
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet ibt=off"
+```
+2.  **把kms 从 /etc/mkinitcpio.conf 里的HOOKS 数组中移除，并重新生成 initramfs。** 也是必须的。
+```
+mkinitcpio -P
+```
